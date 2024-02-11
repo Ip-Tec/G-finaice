@@ -30,27 +30,28 @@ class LoanApplicationMail extends Mailable
             ->with([
                 'idCardPath' => $idCardPath,
             ])
+            ->from(config('mail.from.address'), config('mail.from.name'))
             ->attachFromStorage($idCardPath); // Attach the ID card file from storage
     }
     /**
      * Get the message envelope.
      */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Loan Application Mail',
-        );
-    }
+    // public function envelope(): Envelope
+    // {
+    //     return new Envelope(
+    //         subject: 'Loan Application Mail',
+    //     );
+    // }
 
     /**
      * Get the message content definition.
      */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
+    // public function content(): Content
+    // {
+    //     return new Content(
+    //         view: 'view.name',
+    //     );
+    // }
 
     /**
      * Get the attachments for the message.
