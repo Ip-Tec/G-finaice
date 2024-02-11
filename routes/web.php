@@ -21,16 +21,18 @@ Route::get('/', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-});
-Route::post('/contact', [ContactController ::class, 'submit'])->name('contact.submit');
-Route::post('/submitLoan', [ContactController ::class, 'submitLoan'])->name('contact.submitLoan');
+})->name("contact");
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
+Route::post('/submitLoan', [ContactController::class, 'submitLoan'])->name('contact.submitLoan');
 
 Route::get('/services', function () {
     return view('services');
-});
+})->name("services");
+
 Route::get('/loan', function () {
     return view('loan');
-});
+})->name("loan");
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
