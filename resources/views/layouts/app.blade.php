@@ -107,7 +107,7 @@
                             New York, NY 535022<br />
                             United States <br /><br />
                             <a type="tel" href="tel:+18127039247"><strong>Phone:</strong> +1 8127 039 247</a><br />
-                            <a type="email" href="mail:mail@g-finanice.com"><strong>Email:</strong> info@example.com</a><br />
+                            <a type="email" href="mail:mail@g-finanice.com"><strong>Email:</strong> info@g-finaice.org</a><br />
                         </p>
                     </div>
                 </div>
@@ -122,8 +122,8 @@
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->
-                    <!-- Licensing information: https://Ip-core.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://Ip-core.com/nova-bootstrap-business-template/ -->
+                    <!-- Licensing information: https://github.com/Ip-Tec/ -->
+                   
                     Designed by <a href="https://github.com/Ip-Tec/">Ip~Tec</a>
                 </div>
             </div>
