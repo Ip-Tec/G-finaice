@@ -8,7 +8,7 @@
         <div class="container position-relative d-flex flex-column align-items-center">
             <h2>Contact</h2>
             <ol>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{ route('welcome') }}">Home</a></li>
                 <li>Contact</li>
             </ol>
         </div>
