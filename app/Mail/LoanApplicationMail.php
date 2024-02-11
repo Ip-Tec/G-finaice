@@ -27,6 +27,7 @@ class LoanApplicationMail extends Mailable
         $idCardPath = $this->details['id_card'] ?? null;
 
         return $this->view('emails.loan-application')
+            ->subject($this->details['subject'])
             ->with([
                 'idCardPath' => $idCardPath,
             ])

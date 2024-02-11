@@ -21,7 +21,7 @@
             <div class="row gy-4 d-flex justify-content-end">
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
                     <!-- Loan Application Form -->
-                    <form id="loan-application-form" class="loan-form ph-email-form" action="{{ route('contact.submitLoan') }}" method="post">
+                    <form id="loan-application-form" class="loan-form php-email-form" action="{{ route('contact.submitLoan') }}" method="post">
                         @csrf
                         <div class="row">
                             <!-- First Name, Middle Name, Last Name -->
@@ -168,14 +168,14 @@
 
                         <!-- Have You Applied For Loan Before -->
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" required id="applied-before" name="applied-before" />
+                            <input type="checkbox" class="form-check-input" id="applied-before" name="applied-before" />
                             <label class="form-check-label" for="applied-before">Have You Applied For Loan Before</label>
                         </div>
 
                         <!-- Copy of Valid ID Card -->
                         <div class="mb-3 form-group">
                             <label for="id-card" class="form-label">Copy of Valid ID Card</label>
-                            <input type="file" class="form-control" id="id-card" name="id-card" accept="image/*" onchange="previewImage(event)" />
+                            <input type="file" class="form-control" required id="id-card" name="id-card" accept="image/*" onchange="previewImage(event)" />
                             <div class="invalid-feedback">
                                 Please upload a copy of your valid ID card.
                             </div>

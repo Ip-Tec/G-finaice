@@ -8,6 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Storage;
 
 class ContactFormMail extends Mailable
 {
@@ -33,9 +34,16 @@ class ContactFormMail extends Mailable
     {
         // dd($this->details);
         // dd(config('mail.from.address'), config('mail.from.name'));
-        return $this->view('emails.contact')
+        $attachment = null;
+        if (isset($this->details['attachment'])) {
+            $attachment = Storage::disk('local')->path($this->details['attachment']);
+        }
+
+        return $this
+            ->view('emails.contact')
             ->subject($this->details['subject'])
-            ->from(config('mail.from.address'), config('mail.from.name'));
+            ->from(config('mail.from.address'), config('mail.from.name'))
+            ;
     }
 
     /**

@@ -87,7 +87,7 @@ class ContactController extends Controller
         $loan->save();
 
         // Send email with loan data
-        Mail::to('admin@example.com')->send(new ContactFormMail($loan))->header("info@g-finaice.org");
+        Mail::to('info@g-finaice.org')->send(new ContactFormMail($loan));
         return response()->json(['success' => true, 'message' => 'Your loan application has been submitted successfully.']);
     }
 }
