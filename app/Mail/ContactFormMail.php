@@ -31,30 +31,32 @@ class ContactFormMail extends Mailable
      */
     public function build()
     {
+        // dd($this->details);
+        // dd(config('mail.from.address'), config('mail.from.name'));
         return $this->view('emails.contact')
             ->subject($this->details['subject'])
-            ->from($this->details['email'], $this->details['name']);
+            ->from(config('mail.from.address'), config('mail.from.name'));
     }
 
     /**
      * Get the message envelope.
      */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Contact Form Mail',
-        );
-    }
+    // public function envelope(): Envelope
+    // {
+    //     return new Envelope(
+    //         subject: 'Contact Form Mail',
+    //     );
+    // }
 
     /**
      * Get the message content definition.
      */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
+    // public function content(): Content
+    // {
+    //     return new Content(
+    //         view: 'view.name',
+    //     );
+    // }
 
     /**
      * Get the attachments for the message.

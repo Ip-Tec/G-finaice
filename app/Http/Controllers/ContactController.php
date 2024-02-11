@@ -36,7 +36,7 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('peterotakhor@gmail.com')->send(new ContactFormMail($details))->header("info@g-finaice.org");
+        Mail::to('peterotakhor@gmail.com')->send(new ContactFormMail($details));
 
         return response()->json(['success' => true, 'message' => 'Your message has been sent successfully.']);
     }
