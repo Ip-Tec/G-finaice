@@ -36,14 +36,14 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('mail@g-finaicd.org')->send(new ContactFormMail($details));
+        Mail::to('peterotakhor@gmail.com')->send(new ContactFormMail($details))->header("info@g-finaice.org");
 
-        return redirect()->back()->with('success', 'Your message has been sent successfully.');
+        return response()->json(['success' => true, 'message' => 'Your message has been sent successfully.']);
     }
 
     public function submitLoan(Request $request)
     {
-        dd($request);
+
         $request->validate([
             'first_name' => 'required|string|max:255',
             'middle_name' => 'nullable|string|max:255',
@@ -87,8 +87,7 @@ class ContactController extends Controller
         $loan->save();
 
         // Send email with loan data
-        Mail::to('admin@example.com')->send(new ContactFormMail($loan));
-
-        return redirect()->back()->with('success', 'Your loan application has been submitted successfully.');
+        Mail::to('admin@example.com')->send(new ContactFormMail($loan))->header("info@g-finaice.org");
+        return response()->json(['success' => true, 'message' => 'Your loan application has been submitted successfully.']);
     }
 }
