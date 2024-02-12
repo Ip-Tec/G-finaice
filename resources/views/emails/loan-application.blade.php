@@ -73,8 +73,8 @@
         @endif
 
         @if(isset($idCardPath))
-        <img src="{{ asset('storage/' . $idCardPath) }}" width="200" />
-        <p><strong>ID Card:</strong> <a href="{{ asset('storage/' . $idCardPath) }}" download>Download ID Card</a></p>
+        <img src="{{ asset('storage' . $idCardPath) }}" width="200" />
+        <p><strong>ID Card:</strong> <a href="{{ asset('storage' . $idCardPath) }}" download>Download ID Card</a></p>
         @endif
 
     </div>
