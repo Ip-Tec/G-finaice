@@ -68,6 +68,7 @@
             headers: { "X-Requested-With": "XMLHttpRequest" },
         })
             .then((response) => {
+                console.log({response});
                 if (response.ok) {
                     return response.json();
                 } else {
@@ -88,6 +89,7 @@
                 }
             })
             .catch((error) => {
+                console.log({error});
                 displayError(thisForm, error);
             });
     }

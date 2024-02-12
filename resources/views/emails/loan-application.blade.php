@@ -27,8 +27,9 @@
     <p><strong>Loan Duration:</strong> {{ $details['loan_duration'] }}</p>
     <p><strong>Loan Purpose:</strong> {{ $details['loan_purpose'] }}</p>
     <p><strong>Applied Before:</strong> {{ $details['applied_before'] }}</p>
+    <p><strong>ID Card:</strong> <img src="{{ asset('storage/' . $idCardPath) }} }}" width="6rem" /></p>
 
-    'id_card' => 'nullable|image|max:2048'
+
     <!-- Add other form data fields here -->
 
     @if(isset($idCardPath))

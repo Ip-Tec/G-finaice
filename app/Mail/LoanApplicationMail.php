@@ -13,26 +13,37 @@ class LoanApplicationMail extends Mailable
 {
     use Queueable, SerializesModels;
     public $details;
+    public $url;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($details)
+    public function __construct($details, $url)
     {
         $this->details = $details;
+        $this->url = $url;
     }
 
     public function build()
     {
-        $idCardPath = $this->details['id_card'] ?? null;
-
-        return $this->view('emails.loan-application')
-            ->subject($this->details['subject'])
-            ->with([
-                'idCardPath' => $idCardPath,
-            ])
-            ->from(config('mail.from.address'), config('mail.from.name'))
-            ->attachFromStorage($idCardPath); // Attach the ID card file from storage
+        // Check if id_card path exists and is not null
+        // dd($this->url);
+        if (isset($this->url) && $this->url !== null) {
+            $idCardPath = $this->url;
+            // Attach the ID card file from storage
+            return $this->view('emails.loan-application')
+                ->subject($this->details['subject'])
+                ->with([
+                    'idCardPath' => $idCardPath,
+                ])
+                ->from(config('mail.from.address'), config('mail.from.name'))
+                ->attachFromStorage($idCardPath);
+        } else {
+            // If id_card path is not set or null, return the email without attachment
+            return $this->view('emails.loan-application')
+                ->subject($this->details['subject'])
+                ->from(config('mail.from.address'), config('mail.from.name'));
+        }
     }
     /**
      * Get the message envelope.
