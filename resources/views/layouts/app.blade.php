@@ -8,6 +8,8 @@
     <title>@yield('title', 'G-Finance')</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <meta property="og:description" content="Welcome to our online hub, where finance meets convenience! Explore our comprehensive range of financial services designed to empower and elevate your financial journey. From loans to investments, we've got you covered. Join our community today and embark on a path to financial freedom!">
+    <meta name="twitter:description" content="Welcome to our online hub, where finance meets convenience! Explore our comprehensive range of financial services designed to empower and elevate your financial journey. From loans to investments, we've got you covered. Join our community today and embark on a path to financial freedom!">
 
     <!-- Favicons -->
     <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
@@ -49,7 +51,7 @@
                     <li><a href="/services" class="{{ Request::is('/services') ? 'active' : '' }}">Services</a></li>
 
                     <li><a href="/contact" class="{{ Request::is('/contact') ? 'active' : '' }}">Contact</a></li>
-                    
+
                     <li><a href="/loan" class="{{ Request::is('/loan') ? 'active' : '' }}">Get a Loan</a></li>
                 </ul>
             </nav>
@@ -73,9 +75,7 @@
                             <span>G-Finaice</span>
                         </a>
                         <p>
-                            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-                            nada terra videa magna derita valies darta donna mare fermentum
-                            iaculis eu non diam phasellus.
+                            Step into a World of Financial Empowerment and Opportunity, Where Your Goals Are Our Priority. With Our Dedicated Team by Your Side, You'll Navigate the Complexities of Finance with Ease, Unleashing Your Potential and Embracing a Future Filled with Prosperity, Stability, and Peace of Mind. Together, Let's Build a Stronger Financial Foundation and Forge a Path Towards Your Deepest Aspirations and Greatest Successes.
                         </p>
                         <div class="social-links d-flex mt-3">
                             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -107,7 +107,7 @@
                             New York, NY 535022<br />
                             United States <br /><br />
                             <a type="tel" href="tel:+18127039247"><strong>Phone:</strong> +1 8127 039 247</a><br />
-                            <a type="email" href="mail:mail@g-finanice.com"><strong>Email:</strong> info@g-finaice.org</a><br />
+                            <a type="email" href="mail:mail@g-finanice.com"><strong>Email:</strong>mail@g-finaice.org</a><br />
                         </p>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->
                     <!-- Licensing information: https://github.com/Ip-Tec/ -->
-                   
+
                     Designed by <a href="https://github.com/Ip-Tec/">Ip~Tec</a>
                 </div>
             </div>

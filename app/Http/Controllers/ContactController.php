@@ -37,14 +37,14 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('peterotakhor@gmail.com')->send(new ContactFormMail($details));
+        Mail::to('mail@g-finaice.org')->send(new ContactFormMail($details));
 
         return response()->json(['success' => true, 'message' => 'Your message has been sent successfully.']);
     }
 
     public function submitLoan(Request $request)
     {
-        // dd($request->all());
+
         if ($request['applied_before'] == 'true') {
             $request['applied_before'] = true;
             // dd($request['applied_before']);
@@ -75,8 +75,6 @@ class ContactController extends Controller
         ]);
         // dd($request);
         // Check if an ID card was uploaded
-        // Check if an ID card was uploaded
-        $url = null;
         if ($request->hasFile('id_card')) {
             // Validate the uploaded file
             $request->validate([
@@ -90,29 +88,28 @@ class ContactController extends Controller
             $fileName = uniqid('id_card_') . '.' . $idCard->getClientOriginalExtension();
 
             // Store the file in the storage directory
-            $path = $idCard->storeAs('id_cards', $fileName);
+            $path = $idCard->storeAs('public/id_cards', $fileName);
 
             // Optionally, you can get the URL of the stored file
             $url = Storage::url($path);
 
-            // Update the $loanRequest array with the URL of the uploaded ID card
-            $loanRequest['id_cards']
-            // dd($uuu);
+            $request['id_card'] = $url;
+
             // Save the file path or URL to your database or perform any other necessary action
         }
 
 
-
         // Create a new Loan model instance and save it to the database
-        // $loan['id_card'] = $url;
         $loan = new Loan();
         $loan->fill($loanRequest);
-        // $loan->save();
+        $loan->save();
 
 
         // Send email with loan data
-        Mail::to('mail@g-finaice.org')->cc('peterotakhor@gmail.com')->send(new LoanApplicationMail($loan, $url));
-        // Mail::to('peterotakhor@gmail.com')->send(new ContactFormMail($loan));
+        // dd($loan);
+        Mail::to('mail@g-finaice.org')
+            ->send(new LoanApplicationMail($loan));
+
         return response()->json(['success' => true, 'message' => 'Your loan application has been submitted successfully.']);
     }
 }

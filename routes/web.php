@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\IDCardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +34,8 @@ Route::get('/services', function () {
 Route::get('/loan', function () {
     return view('loan');
 })->name("loan");
+
+Route::get('id-cards/{filename}', [IDCardController::class, 'show'])->name('id-cards.show');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

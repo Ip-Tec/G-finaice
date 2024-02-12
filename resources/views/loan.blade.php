@@ -21,7 +21,7 @@
             <div class="row gy-4 d-flex justify-content-end">
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
                     <!-- Loan Application Form -->
-                    <form id="loan-application-form" class="loan-form ph-email-form" action="{{ route('contact.submitLoan') }}" method="post" enctype="multipart/form-data">
+                    <form id="loan-application-form" class="loan-form php-email-form" action="{{ route('contact.submitLoan') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <!-- First Name, Middle Name, Last Name -->
