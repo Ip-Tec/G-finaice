@@ -37,7 +37,7 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('mail@g-finaice.org')->send(new ContactFormMail($details));
+        Mail::to(config('mail.web.name'))->send(new ContactFormMail($details));
 
         return response()->json(['success' => true, 'message' => 'Your message has been sent successfully.']);
     }
@@ -107,7 +107,7 @@ class ContactController extends Controller
 
         // Send email with loan data
         // dd($loan);
-        Mail::to('mail@g-finaice.org')
+        Mail::to(config('mail.web.name'))
             ->send(new LoanApplicationMail($loan));
 
         return response()->json(['success' => true, 'message' => 'Your loan application has been submitted successfully.']);
