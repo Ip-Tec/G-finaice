@@ -252,100 +252,121 @@
 
             <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
+                    <!-- Testimonial 1: John Doe -->
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                             <p>
-                                Proin iaculis purus consequat sem cure digni ssim donec
-                                porttitora entum suscipit rhoncus. Accusantium quam,
-                                ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                risus at semper.
+                                I am extremely satisfied with the services provided by
+                                G-Finaice. They exceeded my expectations and delivered
+                                excellent results.
                             </p>
                             <div class="profile mt-auto">
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
+                                <img src="../assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
+                                <h3>John Doe</h3>
+                                <h4>Client</h4>
                             </div>
                         </div>
                     </div>
                     <!-- End testimonial item -->
 
+                    <!-- Testimonial 2: Jane Smith -->
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
                             </div>
                             <p>
-                                Export tempor illum tamen malis malis eram quae irure esse
-                                labore quem cillum quid cillum eram malis quorum velit fore
-                                eram velit sunt aliqua noster fugiat irure amet legam anim
-                                culpa.
+                                Working with G-Finaice was a great experience. Their
+                                professionalism and attention to detail impressed me. I
+                                would highly recommend their services.
                             </p>
                             <div class="profile mt-auto">
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
+                                <img src="../assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                                <h3>Jane Smith</h3>
+                                <h4>Client</h4>
                             </div>
                         </div>
                     </div>
                     <!-- End testimonial item -->
 
+                    <!-- Testimonial 3: Michael Johnson -->
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
                             </div>
                             <p>
-                                Enim nisi quem export duis labore cillum quae magna enim
-                                sint quorum nulla quem veniam duis minim tempor labore quem
-                                eram duis noster aute amet eram fore quis sint minim.
+                                G-Finaice helped me streamline my finances and achieve my
+                                financial goals. I appreciate their expertise and dedication
+                                to customer satisfaction.
                             </p>
                             <div class="profile mt-auto">
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                                <img src="../assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
+                                <h3>Michael Johnson</h3>
+                                <h4>Client</h4>
                             </div>
                         </div>
                     </div>
                     <!-- End testimonial item -->
 
+                    <!-- Testimonial 4: Emily Brown -->
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                             <p>
-                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                                multos export minim fugiat minim velit minim dolor enim duis
-                                veniam ipsum anim magna sunt elit fore quem dolore labore
-                                illum veniam.
+                                I couldn't be happier with the support I received from
+                                G-Finaice. Their team went above and beyond to assist me and
+                                provided valuable insights.
                             </p>
                             <div class="profile mt-auto">
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
+                                <img src="../assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
+                                <h3>Emily Brown</h3>
+                                <h4>Client</h4>
                             </div>
                         </div>
                     </div>
                     <!-- End testimonial item -->
 
+                    <!-- Testimonial 5: David Wilson -->
                     <div class="swiper-slide">
                         <div class="testimonial-item">
                             <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
                             </div>
                             <p>
-                                Quis quorum aliqua sint quem legam fore sunt eram irure
-                                aliqua veniam tempor noster veniam enim culpa labore duis
-                                sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                                fore nisi cillum quid.
+                                G-Finaice offers top-notch financial services. They are
+                                knowledgeable, reliable, and always ready to help. I'm glad
+                                I chose them for my financial needs.
                             </p>
                             <div class="profile mt-auto">
-                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                <img src="../assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                                <h3>David Wilson</h3>
+                                <h4>Client</h4>
                             </div>
                         </div>
                     </div>
